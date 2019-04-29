@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="master.css"/>
+    <title>MadLibs</title>
+  </head>
+  <body>
+    <div class="jumbotron">
+      @*is a razor syntax and since models follows, it corralate to Model folder and grabs the methods from Program.cs*@
+      <p>It was during the battle of @Model.GetNoun1() when I was running through a
+        @Model.GetNoun2() when a @Model.GetNoun3() went off right next to my platoon.</p>
+        <p>Our @Model.GetOccupation() yelled for us to @Model.GetVerb() to the nearest @Model.GetPlace() we could find. When we got to the @Model.GetPlace() we @Model.GetVerbEd() to start a fire.</p>
+        <p>As we were starting the fire the enemy saw the @Model.GetNoun4() from the fire and started @Model.GetVerbIng() @Model.GetNounPlural() at us.</p>
+        <p>We all quickly ducked behind the @Model.GetNoun5() at the @Model.GetPlace() and returned fire. we quickly eliminated the enemy and were @Model.GetEmotion() that we had won the battle.</p>
+    </div>
+  </body>
+</html>
