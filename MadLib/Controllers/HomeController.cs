@@ -10,11 +10,9 @@ namespace MadLib.Controllers
     // Using just a / enables a shorter URL path.
     [Route("/")]
     //This will return HTML from our View/Home/MadLib.cshtml because our method corresponds with MadLib.cshtml
-    // public string Hello(){ return "Please work!"; }
-
-
     public ActionResult MadLib(string noun1, string noun2, string noun3, string noun4, string noun5, string occupation, string place, string verbEd, string verb, string verbIng, string nounPlural, string emotion) {
       MadLibVariable myMadLibVariable = new MadLibVariable();
+      //this will set variables in our MadLib.cshtml according to user input
       myMadLibVariable.SetNoun1(noun1);
       myMadLibVariable.SetNoun2(noun2);
       myMadLibVariable.SetNoun3(noun3);
@@ -29,6 +27,7 @@ namespace MadLib.Controllers
       myMadLibVariable.SetEmotion(emotion);
       return View(myMadLibVariable);
     }
+    //this will show our Form.cshtml so we can gather user Input
     [Route("/form")]
     public ActionResult Form() { return View(); }
   }
